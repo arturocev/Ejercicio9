@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ejercicio9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-f6-ceP">
+                                <rect key="frame" x="43" y="315" width="259" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="OuH-B5-uzW"/>
+                                    <constraint firstAttribute="height" constant="30" id="ujQ-83-4mg"/>
+                                </constraints>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-Aj-1Uy">
+                                <rect key="frame" x="43" y="486" width="259" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="JHO-ep-p4l"/>
+                                    <constraint firstAttribute="width" constant="255" id="KYJ-PQ-jjW"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántas horas trabajas?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ8-Mq-oMZ">
+                                <rect key="frame" x="45" y="286" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuántas horas duermes?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugf-Ni-Wpq">
+                                <rect key="frame" x="45" y="448" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIEMPO DE OCIO RESTANTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRN-T5-aOJ">
+                                <rect key="frame" x="89.5" y="139" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7d-9I-twg">
+                                <rect key="frame" x="165" y="683" width="84" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="CALCULAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalcularPulsado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9s-OV-8qh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIEMPO DE OCIO RESTANTE:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tru-hc-YhV">
+                                <rect key="frame" x="90" y="623" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W7d-9I-twg" secondAttribute="bottom" constant="149" id="2GP-gu-Rbg"/>
+                            <constraint firstItem="ugf-Ni-Wpq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="9Ut-nR-rFs"/>
+                            <constraint firstItem="tbo-Aj-1Uy" firstAttribute="top" secondItem="ugf-Ni-Wpq" secondAttribute="bottom" constant="17" id="FGQ-8a-fvz"/>
+                            <constraint firstItem="W7d-9I-twg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NrZ-Jb-d2d"/>
+                            <constraint firstItem="Tru-hc-YhV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFW-hZ-tfR"/>
+                            <constraint firstItem="TZ8-Mq-oMZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="VUX-B1-Za6"/>
+                            <constraint firstItem="TZ8-Mq-oMZ" firstAttribute="top" secondItem="ZRN-T5-aOJ" secondAttribute="bottom" constant="126" id="bY2-sG-cyL"/>
+                            <constraint firstItem="ugf-Ni-Wpq" firstAttribute="top" secondItem="mNj-f6-ceP" secondAttribute="bottom" constant="103" id="cHg-C6-fjS"/>
+                            <constraint firstItem="mNj-f6-ceP" firstAttribute="top" secondItem="TZ8-Mq-oMZ" secondAttribute="bottom" constant="8" symbolic="YES" id="djP-LA-u0k"/>
+                            <constraint firstItem="Tru-hc-YhV" firstAttribute="top" secondItem="W7d-9I-twg" secondAttribute="bottom" constant="-90" id="fe2-eC-uoJ"/>
+                            <constraint firstItem="ZRN-T5-aOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="gSW-4q-4mI"/>
+                            <constraint firstItem="mNj-f6-ceP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hS7-cS-cmV"/>
+                            <constraint firstItem="tbo-Aj-1Uy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="qja-ei-CrT"/>
+                            <constraint firstItem="ZRN-T5-aOJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xrm-AK-Z6D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botonCalcular" destination="W7d-9I-twg" id="GCN-JD-SfE"/>
+                        <outlet property="sliderSuenio" destination="tbo-Aj-1Uy" id="Y64-7I-jxr"/>
+                        <outlet property="sliderTrabajo" destination="mNj-f6-ceP" id="igL-im-3gS"/>
+                        <outlet property="tiempoOcioRestante" destination="Tru-hc-YhV" id="Of8-L8-96h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
